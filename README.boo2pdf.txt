@@ -17,7 +17,7 @@ SCR.  It outputs really ugly HTML and .gif and .jpg images in SCR's
 preset cache directory (~/.IBM/)
 
 Example Run Script:
---Note: This script requires Xvfb, xvfb-run, htmldoc.--
+--Note: This script requires Xvfb, xvfb-run, htmldoc--
 
 Take a look at convert.sh for an example run script.  You will want to 
 customize this to your system and take into account the notes below.
