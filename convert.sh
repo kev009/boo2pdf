@@ -8,7 +8,7 @@ BOOTMP=/tmp/boo2pdf
 FILENAME=$1
 BASENAME=$2
 
-/usr/local/bin/xvfb-run.sh -f $BOOTMP/booX -s '-screen 0 1024x768x24' java -cp $BOOKMANAGER/bin:$BOOKMANAGER/sys/hlccommon.jar:$BOOKMANAGER/sys/XKS.jar BooTester3 -d $BOOKMANAGER/sys/ $FILENAME $BOOTMP/$BASENAME
+/usr/local/bin/xvfb-run.sh -f $BOOTMP/booX -s '-screen 0 1024x768x24' java -cp $BOOKMANAGER/bin:$BOOKMANAGER/sys/hlccommon.jar:$BOOKMANAGER/sys/XKS.jar boo2pdf -d $BOOKMANAGER/sys/ $FILENAME $BOOTMP/$BASENAME
 
 # Fix image paths
 sed -i s"|file:///||" $BOOTMP/$BASENAME.html
