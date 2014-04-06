@@ -23,9 +23,9 @@ _Note: This script requires Xvfb, xvfb-run, htmldoc_
 Take a look at convert.sh for an example run script.  You will want to 
 customize this to your system and take into account the notes below.
   
-This script takes two parameters: <name>.boo <name>. <name> is the root
-file name.  It will output an intermediate <name>.html and then <name>.pdf 
-once htmldoc is run.  
+This script takes two parameters: `<name>.boo` `<name>`. `<name>` is the 
+root file name.  It will output an intermediate `<name>.html` and then 
+`<name>.pdf` once htmldoc is run.
 
 ## Notes
 This repo is Linux only.  By using the Windows SCR and editing 
@@ -56,3 +56,4 @@ mv boo2pdf.class ../bin/
 ```
 
 ##Patches or help with a C/C++ port welcome.
+We'd need docs or reversing of the file formats.
