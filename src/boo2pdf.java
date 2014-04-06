@@ -8,7 +8,7 @@ public class boo2pdf {
 		//String runDir = "/home/kev009/Downloads/sys/";
 
 		String runDir = args[1];
-		
+
 		// Check for UNICODE table?
 		File var6;
 		var6 = new File(runDir + "libhlcwam.so");
@@ -31,7 +31,7 @@ public class boo2pdf {
 
 		System.out.println("Starting...");
 		System.out.println("runDir: " + runDir);
-		
+
 		//String rootName = args[3];
 
 		// Open an HTML file handle for outputting body
@@ -84,12 +84,9 @@ public class boo2pdf {
 			System.out.println("IO Exception: " + e);
 		}
 
-		System.gc();
-
 		System.out.println("Exit.");
 
 		System.exit(0);
 	}
 
 }
-
